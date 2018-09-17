@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://java.sun.com/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd" id="WebApp_ID" version="2.5">
+  <display-name>bookstore</display-name>
+  
+  <servlet>
+     <servlet-name>registerservlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.RegisterServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>registerservlet</servlet-name>
+    <url-pattern>/register</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>activeservlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.ActiveServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>activeservlet</servlet-name>
+    <url-pattern>/activeServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>loginservlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.LoginServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>loginservlet</servlet-name>
+    <url-pattern>/loginServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>myaccout</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.MyAccout</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>myaccout</servlet-name>
+    <url-pattern>/myAccout</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+   <servlet>
+     <servlet-name>findUserById</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.FindUserById</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>findUserById</servlet-name>
+    <url-pattern>/findUserById</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <servlet>
+     <servlet-name>modifyUserServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.ModifyUserServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>modifyUserServlet</servlet-name>
+    <url-pattern>/modifyUserServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>pageServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.PageServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>pageServlet</servlet-name>
+    <url-pattern>/pageServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+    <servlet>
+     <servlet-name>bookinfoServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.FindBookInfoServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>bookinfoServlet</servlet-name>
+    <url-pattern>/findBookInfoServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>cartServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.AddCartServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>cartServlet</servlet-name>
+    <url-pattern>/addCartServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>changeServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.ChangeNumServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>changeServlet</servlet-name>
+    <url-pattern>/changeNumServlet</url-pattern>
+  </servlet-mapping>
+  
+  
+   <servlet>
+     <servlet-name>orderServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.CreateOrderServlet</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>orderServlet</servlet-name>
+    <url-pattern>/createOrderServlet</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+     <servlet-name>findorderServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.FindOrderByUserId</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>findorderServlet</servlet-name>
+    <url-pattern>/findOrderByUserId</url-pattern>
+  </servlet-mapping>
+  
+  
+  <servlet>
+     <servlet-name>findorderItemServlet</servlet-name>
+     <servlet-class>com.hxzy.bookstore.web.FindOrderItemsId</servlet-class>
+  </servlet>
+  
+  <servlet-mapping>
+    <servlet-name>findorderItemServlet</servlet-name>
+    <url-pattern>/findOrderItemsId</url-pattern>
+  </servlet-mapping>
+  
+  
+  
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
